@@ -1,5 +1,5 @@
 const express = require('express');
-
+const path = require('path');
 const app = express();
 
 let noteTitle;
@@ -204,11 +204,18 @@ app.get('/api/notes', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
   // recieves a new note to save on the request body (req.body)
-
+  const newNote = req.body;
   // add it to the db.json file
+  jsonNotes.forEach((note) => {
+    const li = createLi(note.title);
+    li.dataset.note = JSON.stringify(note);
 
+    noteListItems.push(li);
+  });
   // return the new note to the client
 });
+
+module.exports = app;
 
 app.listen(3001, () => {
   console.log(`API server now on port 3001!`);
