@@ -1,3 +1,7 @@
+const express = require('express');
+
+const app = express();
+
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -192,7 +196,20 @@ app.get('*', (req, res) => {
 // API Routes ---------------------------------------
 
 app.get('/api/notes', (req, res) => {
-  
+  // reads db.json file
 
-  // res.sendFile(path.join(__dirname, 'index.html'));
+  // returns all saved notes as json
+
+});
+
+app.post('/api/notes', (req, res) => {
+  // recieves a new note to save on the request body (req.body)
+
+  // add it to the db.json file
+
+  // return the new note to the client
+});
+
+app.listen(3001, () => {
+  console.log(`API server now on port 3001!`);
 });
