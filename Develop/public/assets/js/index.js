@@ -1,6 +1,9 @@
+// Added my code (routes) to the bottom of the page
+const fs = require('fs');
 const express = require('express');
 const path = require('path');
 const app = express();
+const { notes } = require('../../db/db.json');
 
 let noteTitle;
 let noteText;
