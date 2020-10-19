@@ -213,6 +213,7 @@ app.post('/api/notes', (req, res) => {
     noteListItems.push(li);
   });
   // return the new note to the client
+  return noteListItems.pop();
 });
 
 module.exports = app;
