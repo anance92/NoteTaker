@@ -1,0 +1,26 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "* In this application, the user can organize their thoughts and keep track of tasks that need to be completed. With the NoteTaker, you can enter a note title and corresponding description, save it, and it is stored with existing notes. You can also access pre-existing notes and make changes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "jest": "^26.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anance92/NoteTaker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/anance92/NoteTaker/issues"
+  },
+  "homepage": "https://github.com/anance92/NoteTaker#readme"
+}

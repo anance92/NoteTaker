@@ -6,4 +6,4 @@
 ![](assets/images/01-html-css-git-homework-demo.png "Screenshot of Mock up")
 
 ## Link to the website:
-* https://anance92.github.io/NoteTaker/
+* https://sleepy-waters-77384.herokuapp.com/
